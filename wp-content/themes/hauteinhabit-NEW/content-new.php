@@ -36,11 +36,11 @@
 
 	<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-	<div class="post-lead">
+		<!--<div class="post-lead">
 
-		<?php echo get_first_paragraph(); ?>
-		
-	</div>
+			<?php //echo get_first_paragraph(); ?>
+			
+		</div>-->
 
 	
 	<div class="entry-excerpt">
