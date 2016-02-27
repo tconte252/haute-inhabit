@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-language" content="en">
+<title></title>
+<meta name="robots" content="noindex, follow">
+<style>
+* {padding:0;margin:0;border:none;}
+html {font: .7em Verdana;}
+a {color:#000;text-decoration:none;}
+html {overflow:scroll !important;}
+.hide {display:none}
+.hide-price, .hide-brand {display:none!important;}
+#left_scroll, #right_scroll {display:none;background:white url(http://www.rewardstyle.com/styles/images/scroller-arrows.png) -26px 50% no-repeat;
+position:absolute;top:0;left:0;width:25px;height:120px;text-indent: -999em;z-index:999;cursor: pointer;}
+#right_scroll {background-position:-50px 50%;left:auto;right:0;}
+#left_scroll:hover {background-position:0 50%;}
+#right_scroll:hover {background-position:-75px 50%;}
+#products-post-area {position:relative;}
+#products-post-preview-area {height:150px;width:900px;position:relative;}
+.products-post-products-list.in-widget {margin:0!important;}
+#products-post-scroller {width:550px;overflow: hidden;position:relative;margin:0 auto;padding:0 25px;}
+#products-post-wrapper {position:relative;width:550px;height: 120px;overflow:hidden;left:0;}
+#products-post-code-area {height:120px;width:190px;}
+#products-post-copy-code {width:190px;margin:5px 0 2px 0;text-shadow: 0px -1px 0px rgba(0,0,0,0.5);filter: dropshadow(color=#000000, offx=0, offy=-1);
+background: rgb(245,60,92);
+background: -moz-linear-gradient(top,  rgba(245,60,92,1) 0%, rgba(218,28,62,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,60,92,1)), color-stop(100%,rgba(218,28,62,1)));
+background: -webkit-linear-gradient(top,  rgba(245,60,92,1) 0%,rgba(218,28,62,1) 100%);
+background: -o-linear-gradient(top,  rgba(245,60,92,1) 0%,rgba(218,28,62,1) 100%);
+background: -ms-linear-gradient(top,  rgba(245,60,92,1) 0%,rgba(218,28,62,1) 100%);
+background: linear-gradient(to bottom,  rgba(245,60,92,1) 0%,rgba(218,28,62,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f53c5c', endColorstr='#da1c3e',GradientType=0 );
+}
+#products-post-copy-code:hover {
+background: rgb(218,28,62);
+background: -moz-linear-gradient(top,  rgba(218,28,62,1) 0%, rgba(245,60,92,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(218,28,62,1)), color-stop(100%,rgba(245,60,92,1)));
+background: -webkit-linear-gradient(top,  rgba(218,28,62,1) 0%,rgba(245,60,92,1) 100%);
+background: -o-linear-gradient(top,  rgba(218,28,62,1) 0%,rgba(245,60,92,1) 100%);
+background: -ms-linear-gradient(top,  rgba(218,28,62,1) 0%,rgba(245,60,92,1) 100%);
+background: linear-gradient(to bottom,  rgba(218,28,62,1) 0%,rgba(245,60,92,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da1c3e', endColorstr='#f53c5c',GradientType=0 );
+}
+#products-post-copy {height:60px;position:relative;}
+#product-post-intro {position:absolute;top:0;left:0;}
+#product-post-intro-text {font: 17px Verdana;line-height:150px;font-style: italic;color: #ccc;text-align: center;z-index: 10;position: relative;font-weight:normal;margin-bottom:-150px;}
+#products-post-left-nav {width: 209px;float: left;position: relative;border-right: 1px solid #eaeaea;min-height:750px;}
+#products-post-selection-area {margin:20px 0;position:relative;width: 660px;padding:0 0 0 15px;margin-left: -1px;float: left;border-left: 1px solid #eaeaea;}
+#product-post-search {border: 1px solid #ccc;padding: 4px;display: block;width: 220px;height: 22px;margin-bottom:10px;}
+#product-post-search form {position:relative;}
+#product-post-search-input {width: 190px !important;border: none;font-style: italic;padding:4px 0;}
+#show-hover {padding-top:7px;margin-bottom:20px;}
+#show-hover {border-top:1px solid #eaeaea;}
+#size-hover {float:right;width:50px;margin-left:10px;color:#818181;font-style: italic;}
+.products-post-products-list {border:1px solid #e6e6e6;width:100px;height:120px;float:left;margin:0 8px 5px 0;text-align:center;position:relative;cursor:pointer;}
+#products-post-wrapper .products-post-products-list {cursor:default;border:none;margin-bottom:10px;padding:0 5px;}
+.products-post-products-list img {max-height: 120px;max-width: 100px;}
+.product-info {display:none;width:100px;position:absolute;bottom:0;left:5px;}
+.product-info.hover-info {background: transparent url(http://www.rewardstyle.com/styles/images/product-post-hover-top.png) top left no-repeat;}
+.product-info-bottom {display:none;height:1px;width:100px;background: transparent url(http://www.rewardstyle.com/styles/images/product-post-hover-bottom.png) top left no-repeat;}
+.hover-info .product-info-bottom {display:block;}
+.product-brand {display:none;margin:13px 0 10px;font-weight:bold;font-size:11px;}
+.product-price {display:none;margin:15px 0;font-size:11px;font-weight: normal;}
+.hover-info .product-brand {margin-top:8px;}
+.hover-info .product-price {margin:10px 0 9px;}
+.in-widget .product-info.show {display:block!important;}
+/**
+* LOOKBOOK Widget
+**/
+#products-post-preview-area {width:684px;height:500px;padding-bottom:30px;}
+#products-post-scroller {width:500px;padding:0 25px 30px;}
+#products-post-wrapper {width:500px;height:500px;}
+.products-post-products-list.in-widget {width: 500px;height: 500px;}
+.products-post-products-list.in-widget img {max-height: 500px;max-width: 500px;}
+#products-post-wrapper .products-post-products-list {padding: 0;}
+#left_scroll, #right_scroll {height: 500px;}
+.product-info {width: 100%;position: relative;left: auto;}
+.product-info.hover-info {position:absolute;left:0;bottom:0;}
+.pagination {text-align: center;display: none;font-size:13px;font-style: italic;}
+.pagination.mtop {margin-top:10px;}
+#hide-code {height: 145px;width: 192px;background: white;position: absolute;top: 32px;left: 0;z-index: 999;}
+.product-brand, .product-price {font-size:13px;color:rgb(38,38,38);}
+.product-price {padding:2px 8px 4px;}
+.product-price {background:url(http://www.rewardstyle.com/styles/images/widget-product-info-line.png) top left no-repeat;}
+.product-price.no-bg {background:none;}
+.product-info-area {margin:15px 0;}
+.product-commentary-area {position:relative;}
+.product-commentary-note {position:absolute;top: 3px;left: 20px;font-style:italic;font-size:14px;color:#999;z-index:99;line-height: 39px;height: 43px;width: 460px;}
+.product-commentary-note span {color:#F53C5C;}
+#products-post-preview-area .product-info.hover-info {background: rgb(255,255,255) url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-large.png) top left no-repeat;background: rgba(255,255,255,0.9) url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-large.png) top left no-repeat;}
+#products-post-preview-area .hover-info .product-info-bottom {display:block;height:1px;width:500px;background: transparent url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-large.png) top left no-repeat;}
+#products-post-code {border: none;height: 123px;width: 180px;color: #808080;overflow: hidden;background: rgb(239,239,239) url(http://www.rewardstyle.com/styles/images/copy-code-bg.gif) top left no-repeat;}
+.the-comment {font-style: italic;font-size: 14px;margin-bottom:20px;}
+.img-wrapper img {vertical-align: middle;}
+.product-link {display:block;}
+
+/* Large LOOKBOOK Widget */
+#products-post-preview-area.large, #products-post-preview-area.large #products-post-scroller, #products-post-preview-area.large #products-post-wrapper, #products-post-preview-area.large .products-post-products-list.in-widget, #products-post-preview-area.large #left_scroll, #products-post-preview-area.large #right_scroll, #products-post-preview-area.large #products-post-preview-area, #products-post-preview-area.large .products-post-products-list.in-widget .img-wrapper {height:500px;}
+#products-post-preview-area.large #products-post-scroller, #products-post-preview-area.large .products-post-products-list.in-widget {width:500px;}
+#products-post-preview-area.large .products-post-products-list.in-widget img {max-height:500px;max-width:500px;}
+/* Large with options */
+#products-post-preview-area.large {width:500px;}
+#products-post-preview-area.large.with-price-brand, #products-post-preview-area.large.with-price-brand #products-post-scroller, #products-post-preview-area.large.with-price-brand #products-post-wrapper, #products-post-preview-area.large.with-price-brand .products-post-products-list.in-widget, #products-post-preview-area.large.with-price-brand #left_scroll, #products-post-preview-area.large.with-price-brand #right_scroll, #products-post-preview-area.large.with-price-brand #products-post-preview-area {height:550px;}
+#products-post-preview-area.large.with-commentary, #products-post-preview-area.large.with-commentary #products-post-scroller, #products-post-preview-area.large.with-commentary #products-post-wrapper, #products-post-preview-area.large.with-commentary .products-post-products-list.in-widget, #products-post-preview-area.large.with-commentary #left_scroll, #products-post-preview-area.large.with-commentary #right_scroll, #products-post-preview-area.large.with-commentary #products-post-preview-area {height:590px;}
+#products-post-preview-area.large.with-price-brand-commentary, #products-post-preview-area.large.with-price-brand-commentary #products-post-scroller, #products-post-preview-area.large.with-price-brand-commentary #products-post-wrapper, #products-post-preview-area.large.with-price-brand-commentary .products-post-products-list.in-widget, #products-post-preview-area.large.with-price-brand-commentary #left_scroll, #products-post-preview-area.large.with-price-brand-commentary #right_scroll, #products-post-preview-area.large.with-price-brand-commentary #products-post-preview-area {height:600px;}
+#products-post-preview-area.large.with-hover, #products-post-preview-area.large.with-hover #products-post-scroller, #products-post-preview-area.large.with-hover #products-post-wrapper, #products-post-preview-area.large.with-hover .products-post-products-list.in-widget, #products-post-preview-area.large.with-hover #left_scroll, #products-post-preview-area.large.with-hover #right_scroll, #products-post-preview-area.large.with-hover #products-post-preview-area {height:500px!important;}
+#products-post-preview-area.large #left_scroll, #products-post-preview-area.large #right_scroll {background-image:url(http://www.rewardstyle.com/styles/images/scroller-arrows-large.png);width:35px;}
+#products-post-preview-area.large .product-info .product-commentary-area.nopricebrand {margin:20px 0;}
+#products-post-preview-area.large .img-wrapper {line-height:500px;}
+#products-post-preview-area.large #products-post-scroller {padding:0 35px 30px;}
+/* Large arrows */
+#products-post-preview-area.large #right_scroll {background-position: -70px 50%;}
+#products-post-preview-area.large #left_scroll {background-position: -35px 50%;}#products-post-preview-area.large #right_scroll:hover {background-position: -105px 50%;}
+#products-post-preview-area.large #left_scroll:hover {background-position: 0 50%;}
+/* Large hover */
+#products-post-preview-area.large .product-info.hover-info .product-commentary-area {margin:0 0 20px;}
+
+/* Medium LOOKBOOK Widget */
+#products-post-preview-area.medium {width:400px;}
+#products-post-preview-area.medium, #products-post-preview-area.medium #products-post-scroller, #products-post-preview-area.medium #products-post-wrapper, #products-post-preview-area.medium .products-post-products-list.in-widget, #products-post-preview-area.medium #left_scroll, #products-post-preview-area.medium #right_scroll, #products-post-preview-area.medium #products-post-preview-area, #products-post-preview-area.medium .products-post-products-list.in-widget .img-wrapper {height:400px;}
+#products-post-preview-area.medium #products-post-scroller, #products-post-preview-area.medium .products-post-products-list.in-widget {width:400px;}
+#products-post-preview-area.medium .products-post-products-list.in-widget img {max-height:400px;max-width:400px;}
+#products-post-preview-area.medium .product-info .product-commentary-area .product-commentary-note {width: 360px;}
+#products-post-preview-area.medium .img-wrapper {line-height:400px;}
+#products-post-preview-area.medium.with-hover, #products-post-preview-area.medium.with-hover #products-post-scroller, #products-post-preview-area.medium.with-hover #products-post-wrapper, #products-post-preview-area.medium.with-hover .products-post-products-list.in-widget, #products-post-preview-area.medium.with-hover #left_scroll, #products-post-preview-area.small.with-hover #right_scroll, #products-post-preview-area.medium.with-hover #products-post-preview-area {height:400px!important;}
+/* Medium with options */
+#products-post-preview-area.medium.with-price-brand, #products-post-preview-area.medium.with-price-brand #products-post-scroller, #products-post-preview-area.medium.with-price-brand #products-post-wrapper, #products-post-preview-area.medium.with-price-brand .products-post-products-list.in-widget, #products-post-preview-area.medium.with-price-brand #left_scroll, #products-post-preview-area.medium.with-price-brand #right_scroll, #products-post-preview-area.medium.with-price-brand #products-post-preview-area {height:445px;}
+#products-post-preview-area.medium.with-commentary, #products-post-preview-area.medium.with-commentary #products-post-scroller, #products-post-preview-area.medium.with-commentary #products-post-wrapper, #products-post-preview-area.medium.with-commentary .products-post-products-list.in-widget, #products-post-preview-area.medium.with-commentary #left_scroll, #products-post-preview-area.medium.with-commentary #right_scroll, #products-post-preview-area.medium.with-commentary #products-post-preview-area {height:480px;}
+#products-post-preview-area.medium.with-price-brand-commentary, #products-post-preview-area.medium.with-price-brand-commentary #products-post-scroller, #products-post-preview-area.medium.with-price-brand-commentary #products-post-wrapper, #products-post-preview-area.medium.with-price-brand-commentary .products-post-products-list.in-widget, #products-post-preview-area.medium.with-price-brand-commentary #left_scroll, #products-post-preview-area.medium.with-price-brand-commentary #right_scroll, #products-post-preview-area.medium.with-price-brand-commentary #products-post-preview-area {height:500px;}
+#products-post-preview-area.medium .product-info .product-commentary-area.nopricebrand {margin:15px 0;}
+/* Medium hover */
+#products-post-preview-area.medium .product-info.hover-info .product-commentary-area {margin:0 0 15px;}
+#products-post-preview-area.medium .product-info.hover-info .product-info-area {margin: 15px 0 5px;}
+#products-post-preview-area.with-price-brand .product-info.hover-info .product-info-area {margin: 15px 0;}
+#products-post-area.lookbook-widget #products-post-preview-area.medium .product-info.hover-info {background: rgb(255,255,255) url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-medium.png) top left no-repeat;background: rgba(255,255,255,0.9) url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-medium.png) top left no-repeat;}
+#products-post-area.lookbook-widget #products-post-preview-area.medium .hover-info .product-info-bottom {width:400px;background: transparent url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-medium.png) top left no-repeat;}
+
+/* Small LOOKBOOK Widget */
+#products-post-preview-area.small {width:300px;}
+#products-post-preview-area.small, #products-post-preview-area.small #products-post-scroller, #products-post-preview-area.small #products-post-wrapper, #products-post-preview-area.small .products-post-products-list.in-widget, #products-post-preview-area.small #left_scroll, #products-post-preview-area.small #right_scroll, #products-post-preview-area.small #products-post-preview-area, #products-post-preview-area.small .products-post-products-list.in-widget .img-wrapper {height:300px;}
+#products-post-preview-area.small #products-post-scroller, #products-post-preview-area.small .products-post-products-list.in-widget {width:300px;}
+#products-post-preview-area.small .products-post-products-list.in-widget img {max-height:300px;max-width:300px;}
+#products-post-preview-area.small .product-info .product-commentary-area .product-commentary-note {font-size: 10px;line-height: 42px;width: 254px;}
+#products-post-preview-area.small .img-wrapper {line-height:300px;}
+#products-post-area.lookbook-widget #products-post-preview-area.small #products-post-scroller {padding: 0 25px 30px;}
+/* Small with options */
+#products-post-preview-area.small.with-price-brand, #products-post-preview-area.small.with-price-brand #products-post-scroller, #products-post-preview-area.small.with-price-brand #products-post-wrapper, #products-post-preview-area.small.with-price-brand .products-post-products-list.in-widget, #products-post-preview-area.small.with-price-brand #left_scroll, #products-post-preview-area.small.with-price-brand #right_scroll, #products-post-preview-area.small.with-price-brand #products-post-preview-area {height:335px;}
+#products-post-preview-area.small.with-commentary, #products-post-preview-area.small.with-commentary #products-post-scroller, #products-post-preview-area.small.with-commentary #products-post-wrapper, #products-post-preview-area.small.with-commentary .products-post-products-list.in-widget, #products-post-preview-area.small.with-commentary #left_scroll, #products-post-preview-area.small.with-commentary #right_scroll, #products-post-preview-area.small.with-commentary #products-post-preview-area {height:380px;}
+#products-post-preview-area.small.with-price-brand-commentary, #products-post-preview-area.small.with-price-brand-commentary #products-post-scroller, #products-post-preview-area.small.with-price-brand-commentary #products-post-wrapper, #products-post-preview-area.small.with-price-brand-commentary .products-post-products-list.in-widget, #products-post-preview-area.small.with-price-brand-commentary #left_scroll, #products-post-preview-area.small.with-price-brand-commentary #right_scroll, #products-post-preview-area.small.with-price-brand-commentary #products-post-preview-area {height:410px;}
+#products-post-preview-area.small.with-hover, #products-post-preview-area.small.with-hover #products-post-scroller, #products-post-preview-area.small.with-hover #products-post-wrapper, #products-post-preview-area.small.with-hover .products-post-products-list.in-widget, #products-post-preview-area.small.with-hover #left_scroll, #products-post-preview-area.small.with-hover #right_scroll, #products-post-preview-area.small.with-hover #products-post-preview-area {height:300px!important;}
+#products-post-preview-area.small .product-info .product-commentary-area.nopricebrand {margin:15px 0;}
+/* Small hover */
+#products-post-preview-area.small .product-info.hover-info .product-commentary-area {margin:0 0 15px;}
+#products-post-preview-area.small .product-info.hover-info .product-info-area {margin: 15px 0 7px;}
+#products-post-area.lookbook-widget #products-post-preview-area.small .product-info.hover-info {background: rgb(255,255,255) url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-small.png) top left no-repeat;background: rgba(255,255,255,0.9) url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-small.png) top left no-repeat;}
+#products-post-area.lookbook-widget #products-post-preview-area.small .hover-info .product-info-bottom {width:300px;background: transparent url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-small.png) top left no-repeat;}
+#products-post-area.lookbook-widget #products-post-preview-area.small .hover-info .product-info-bottom {width:300px;background: transparent url(http://www.rewardstyle.com/styles/images/lookbook-hover-line-small.png) top left no-repeat;}
+</style>
+<script src="get_widget_data/jquery-1.js"></script>
+<script src="get_widget_data/jquery.js"></script>
+</head>
+<body>
+<script>
+function fadesIn(){$('.product-info', this).fadeIn('fast');}
+function fadesOut(){$('.product-info', this).fadeOut('fast');}
+$(function(){
+		$('.products-post-products-list').hoverIntent({over: fadesIn, timeout: 50, out: fadesOut});
+	});
+</script>
+<div id="products-post-area" class="lookbook-widget tab-area clearfix current">
+	<div id="products-post-preview-area" class="clearfix small with-price-brand with-hover">
+		<div id="products-post-scroller">
+			<div id="left_scroll" style="display: block; ">Back</div>
+			<div id="right_scroll" style="display: block; ">Forward</div>
+			<div id="products-post-wrapper" class="clearfix" style="width: 3600px; left: -300px"><div class="products-post-products-list in-widget  fake-item fake-first" data-slide-num="10">
+					<a href="http://rstyle.me/%7Ewu/g2w3" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/090b8838e28f9be2dda6c5f3b4e43e3f_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">C. Wonder</span>
+									<span class="product-price  " style="display:inline">$38.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget current-slide-item" data-slide-num="1">
+					<a href="http://rstyle.me/%7Ewu/g2uT" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/a3171868b30702e9b49376293d256e12_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Topshop</span>
+									<span class="product-price  " style="display:inline">$76.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="2">
+					<a href="http://rstyle.me/%7Ewu/g2vq" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/f151f0da68275394748c825e0b269a98_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Tinley Road</span>
+									<span class="product-price  " style="display:inline">$79.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="3">
+					<a href="http://rstyle.me/%7Ewu/g2vO" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/db8eace8a7d78c1c75f1e27029e5de68_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">BCBGMAXAZRIA</span>
+									<span class="product-price  " style="display:inline">$275.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="4">
+					<a href="http://rstyle.me/%7Ewu/g2vk" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/2ae3d1cbb42c211b3b8817dc2db0f035_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">ALEXANDER WANG</span>
+									<span class="product-price  " style="display:inline">$1053.26</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="5">
+					<a href="http://rstyle.me/%7Ewu/g2vn" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/d636f9ecd2e59961205d6d19491e492d_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Current/Elliott</span>
+									<span class="product-price  " style="display:inline">$258.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="6">
+					<a href="http://rstyle.me/%7Ewu/g2wi" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/67d5e28bfbc00a61a711ff2b5dd1bf6c_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Madewell</span>
+									<span class="product-price  " style="display:inline">$55.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="7">
+					<a href="http://rstyle.me/%7Ewu/g2vt" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/d6099c7ca5ee77c75818234618c540ea_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">3.1 Phillip Lim</span>
+									<span class="product-price  " style="display:inline">$375.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="8">
+					<a href="http://rstyle.me/%7Ewu/g2vb" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/918732183b411f417e60511bf81bec78_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Jennifer Zeuner Jewe...</span>
+									<span class="product-price  " style="display:inline">$198.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="9">
+					<a href="http://rstyle.me/%7Ewu/g2v5" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/61a65a935f3659c77c431ccaf7ed60d4_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Pour La Victoire</span>
+									<span class="product-price  " style="display:inline">$136.50</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+										<div class="products-post-products-list real-item in-widget " data-slide-num="10">
+					<a href="http://rstyle.me/%7Ewu/g2w3" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/090b8838e28f9be2dda6c5f3b4e43e3f_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">C. Wonder</span>
+									<span class="product-price  " style="display:inline">$38.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div>
+						<div class="products-post-products-list in-widget fake-item fake-last" data-slide-num="1">
+					<a href="http://rstyle.me/%7Ewu/g2uT" class="product-link" target="_blank">
+						<div class="img-wrapper">
+							<img src="get_widget_data/a3171868b30702e9b49376293d256e12_500px.jpg">
+						</div>
+																				<div class="product-info hover-info" style="display:none">
+								<p class="product-info-area clearfix">
+									<span class="product-brand " style="display:inline">Topshop</span>
+									<span class="product-price  " style="display:inline">$76.00</span>
+								</p>
+																<div class="product-info-bottom"></div>
+							</div>
+																		</a>
+				</div></div>
+		<p class="pagination mtop" style="display: block;"><span id="pag-at">1</span> of <span id="pag-all">10</span></p>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	function page_update() {
+		var in_wid = $('.real-item').length;
+		$('#pag-all').text(in_wid);
+		var pag_at = $('.current-slide-item').data('slide-num');
+		$('#pag-at').text(pag_at);
+	}
+
+	$('.real-item').first().clone().addClass('fake-item fake-last').removeClass('current-slide-item real-item').appendTo('#products-post-wrapper');
+	$('.real-item').last().clone().addClass('fake-item fake-first').removeClass('current-slide-item real-item').prependTo('#products-post-wrapper');
+
+	var row_count = col_count = col_width = the_size_num = 1,
+		the_size = 'large';
+		show_pagination = 1,
+		max_cols = col_count,
+		new_width = new_height = 300,
+		blog_name = '',
+		ids = pp_ids = pp_comments = pag_at = pag_all = '',
+		show_brand = show_price = show_commentary = show_hover = '0';
+
+	if (max_cols > 1) {max_cols = 1;}
+	max_cols_neg = max_cols*new_width*-1 + 'px';
+	max_cols_plus = max_cols*new_width + 'px';
+
+	// Set up the dynamic Product Post carousel
+	$('#products-post-wrapper div:first').before($('#products-post-wrapper li:last'));
+	$('#right_scroll').click(function(){
+    var item_width = $('#products-post-wrapper div').outerWidth();
+    var col_width = col_count*new_width;
+    var left_indent = parseInt($('#products-post-wrapper').css('left')) - col_width;
+    var total_items_width = $('#products-post-wrapper .in-widget').length * item_width;
+    var just_left = parseInt($('#products-post-wrapper').css('left'));
+    var cur_slide_item = $('.current-slide-item');
+	  // If left position + col width is less than all products' widths in scroller
+		$('#products-post-wrapper:not(:animated)').animate({'left' : left_indent},500,function(){
+			cur_slide_item.next().addClass('current-slide-item').end().removeClass('current-slide-item');
+			if ($('.current-slide-item').hasClass('fake-last')) {
+				$('#products-post-wrapper').css('left',-300);
+				$('.in-widget').removeClass('current-slide-item');
+				$('.real-item').first().addClass('current-slide-item');
+			}
+			page_update();
+		});
+	});
+	$('#left_scroll').click(function(){
+    var item_width = $('#products-post-wrapper div').outerWidth();
+    var col_width = col_count*new_width;
+    var left_indent = parseInt($('#products-post-wrapper').css('left')) + col_width;
+    var total_items_width = $('#products-post-wrapper div').length * item_width;
+    var just_left = parseInt($('#products-post-wrapper').css('left'));
+    var cur_slide_item = $('.current-slide-item');
+    // If left position is greater than 0, scroll
+  	$('#products-post-wrapper:not(:animated)').animate({'left' : left_indent},500,function(){
+			cur_slide_item.prev().addClass('current-slide-item').end().removeClass('current-slide-item');
+			if ($('.current-slide-item').hasClass('fake-first')) {
+				$('#products-post-wrapper').css('left',-3000);
+				$('.in-widget').removeClass('current-slide-item');
+				$('.real-item').last().addClass('current-slide-item');
+			}
+			page_update();
+		});
+	});
+
+});
+</script>
+
+
+</div></body></html>

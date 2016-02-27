@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+/*
+Theme Name: Haute Inhabit
+Author: webspiderBD Team
+Author URI: http://webspiderbd.com
+Version: 1.11
+License: efrgrt
+*/nav#main-menu{	width:500px;	}    	nav#main-menu ul li a{	text-transform:uppercase;	font-size:28px;}#nav-below{	background:url('images/paging_dot.png') repeat-x;	float:left;	width:100%;}#nav-below .nav-previous{	float:right;	}#nav-below .mid-home{margin-left:280px; width:100px;	}#nav-below .nav-next{	float:left;	}
+
+
+body #content .related {
+    text-align: center;
+	display: none;
+	visibility: hidden;
+}
+
+body #content em, body #content i {
+    font-style: italic;
+}
+body .post-body em, body .post-body i {
+    font-style: italic;
+}
+.abs {
+    position: absolute;
+}
+.fixed {
+    position: relative;
+    top: 30px !important;
+}
+
+#sidebar .widget_mailchimpsf_widget {
+	margin-bottom: 25px;
+}
+#mc_signup_submit {
+	margin-left: 25px;
+}
+.post-utility .comments {
+	width: 125px;
+}
+
+.entry-content h4.hdr {
+    margin-top: 85px;
+    display: none;
+}

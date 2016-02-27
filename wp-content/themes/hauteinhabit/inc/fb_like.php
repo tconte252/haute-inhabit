@@ -1,0 +1,1 @@
+<div class="fb-like" data-href="http://www.hauteinhabit.com/" data-send="false" data-layout="button_count" data-width="250" data-show-faces="false"></div>
