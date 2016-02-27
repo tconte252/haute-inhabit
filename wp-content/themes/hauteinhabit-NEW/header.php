@@ -63,7 +63,7 @@
 	  			<div class="search btn" data-menu="search">SEARCH</div>
 
 			  	<ul id="social">
-			  		<li class="email"><a href="mailto:lainy@hauteinhabit.com" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/email.png" /></a><ul class="nav-newsletter">
+			  		<li class="email"><a href="#"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/email.png" /></a><ul class="nav-newsletter">
 			<li><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Nav Subscribe') ) : ?><?php endif; ?></li>
 		</ul></li>
 			  		<li class="rss"><a href="/feed/" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/rss.png" /></a></li>
