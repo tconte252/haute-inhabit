@@ -1,17 +1,10 @@
 /*
-Theme Name: Twenty Fifteen
-Theme URI: https://wordpress.org/themes/twentyfifteen
-Author: the WordPress team
-Author URI: https://wordpress.org/
+Theme Name: Haute Inhabit
+Theme URI: http://www.hauteinhabit.com/
+Author: Tom Conte
+Author URI: http://www.cometton.org/
 Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
 Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
-Text Domain: twentyfifteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 
@@ -49,64 +42,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    15.7 - Desktop X-Large
  */
 
-/*@font-face {
+@font-face {
   font-family: 'ITC';
-  src: url('http://wpdevtest.wpengine.com/wp-content/themes/hauteinhabit-NEW/fonts/BlairITCStd-Light.otf');
+  src: url('fonts/BlairITCStd-Light.otf');
 }
 
 @font-face {
   font-family: 'ITC Bold';
-  src: url('http://wpdevtest.wpengine.com/wp-content/themes/hauteinhabit-NEW/fonts/BlairITCStd-Bold.otf');
+  src: url('fonts/BlairITCStd-Bold.otf');
 }
 
 @font-face {
   font-family: 'URW';
-  src: url('http://wpdevtest.wpengine.com/wp-content/themes/hauteinhabit-NEW/fonts/FirminDidURWTOT-Rom.otf');
+  src: url('fonts/FirminDidURWTOT-Rom.otf');
 }
 
 @font-face {
   font-family: 'Scotch';
-  src: url('http://wpdevtest.wpengine.com/wp-content/themes/hauteinhabit-NEW/fonts/ScotchRomanMTStd.otf');
-}
-
-@font-face {
-  font-family: 'ITC';
-  src: url('http://localhost/haute-inhabit/wp-content/themes/hauteinhabit-NEW/fonts/BlairITCStd-Light.otf');
-}
-
-@font-face {
-  font-family: 'ITC Bold';
-  src: url('http://localhost/haute-inhabit/wp-content/themes/hauteinhabit-NEW/fonts/BlairITCStd-Bold.otf');
-}
-
-@font-face {
-  font-family: 'URW';
-  src: url('http://localhost/haute-inhabit/wp-content/themes/hauteinhabit-NEW/fonts/FirminDidURWTOT-Rom.otf');
-}
-
-@font-face {
-  font-family: 'Scotch';
-  src: url('http://localhost/haute-inhabit/wp-content/themes/hauteinhabit-NEW/fonts/ScotchRomanMTStd.otf');
-}*/
-
-@font-face {
-  font-family: 'ITC';
-  src: url('http://www.hauteinhabit.com/wp-content/themes/hauteinhabit-NEW/fonts/BlairITCStd-Light.otf');
-}
-
-@font-face {
-  font-family: 'ITC Bold';
-  src: url('http://www.hauteinhabit.com/wp-content/themes/hauteinhabit-NEW/fonts/BlairITCStd-Bold.otf');
-}
-
-@font-face {
-  font-family: 'URW';
-  src: url('http://www.hauteinhabit.com/wp-content/themes/hauteinhabit-NEW/fonts/FirminDidURWTOT-Rom.otf');
-}
-
-@font-face {
-  font-family: 'Scotch';
-  src: url('http://www.hauteinhabit.com/wp-content/themes/hauteinhabit-NEW/fonts/ScotchRomanMTStd.otf');
+  src: url('fonts/ScotchRomanMTStd.otf');
 }
 
 
@@ -1178,6 +1131,10 @@ a.post-thumbnail:focus {
 	float: left;
 	margin: 0 19px 0 0;
 	max-width: 60%;
+}
+
+.format-standard .entry {
+	padding:25% 0 25% 0;
 }
 
 .entry-header {
