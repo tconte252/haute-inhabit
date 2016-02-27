@@ -1127,14 +1127,28 @@ a.post-thumbnail:focus {
 	opacity: 0.85;
 }
 
-.thumbnail {
-	float: left;
-	margin: 0 19px 0 0;
-	max-width: 60%;
+.format-standard .thumbnail {
+	 display: inline-block; 
+   vertical-align:middle;
 }
 
 .format-standard .entry {
-	padding:25% 0 25% 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+
+.thumbnail {
+	margin: 0 19px 0 0;
+	max-width: 60%;
 }
 
 .entry-header {
@@ -2445,7 +2459,6 @@ padding: 0;
 
 .entry {
 	width: 35%;
-	float: left;
 }
 
 .single #main .carousel {
@@ -2454,6 +2467,16 @@ padding: 0;
 
 
 @media only screen and (max-width : 1200px) {
+
+	.format-standard .thumbnail {
+	 display: block; 
+   vertical-align: baseline;
+}
+
+.format-standard .entry {
+    display: block;
+    vertical-align: baseline;
+}
 	
 	.entry {
 		width: 100%;
