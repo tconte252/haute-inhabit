@@ -1379,7 +1379,7 @@ a.post-thumbnail:focus {
 
 .byline-author {
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	color: #A7A9AB;
 	font-family: 'URW';
 }
@@ -1711,16 +1711,18 @@ a.post-thumbnail:focus {
 	margin-bottom: 0;
 }
 
-.entry-meta, .post-categories {
+.entry-meta {
 	margin: 0 0 13px 0;
 	font-style: italic;
-	font-size: 1em;
+	font-size: 1.25em;
 	color: #A7A9AB;
 	font-family: 'URW';
 }
 
-.single.post-categories {
-	font-size: 1.5em;
+.entry-meta a  {
+	font-style: italic;
+	color: #A7A9AB;
+	font-family: 'URW';
 }
 
 
@@ -1728,8 +1730,16 @@ a.post-thumbnail:focus {
 	color: #610b0b;
 }
 
+.single .post-categories {
+	margin: 0 0 13px 0;
+	font-style: italic;
+	font-size: 1.25em;
+	color: #A7A9AB;
+	font-family: 'URW';
+}
+
 .single .entry-meta {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	color: #A7A9AB;
 	margin: 0;
 }
@@ -2547,6 +2557,10 @@ padding: 0;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+
+	.single .entry-title {
+		font-size: 2em;
+	}
 
 .single-format-image .wp-post-image {
 		margin: 0 0 50px 0;
