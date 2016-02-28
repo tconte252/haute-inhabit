@@ -1117,7 +1117,14 @@ a:focus {
 	height: auto;
 }
 
-.home .thumbnail-full img, .home .thumbnail img, .category .thumbnail-full img, .category .thumbnail img, .search .thumbnail-full img, .search .thumbnail img {
+.home .thumbnail-full img, 
+.home .thumbnail img, 
+.category .thumbnail-full img, 
+.category .thumbnail img, 
+.search .thumbnail-full img, 
+.search .thumbnail img,
+.author .thumbnail-full img,
+.author .thumbnail img {
 	height: auto;
 }
 

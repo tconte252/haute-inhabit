@@ -31,7 +31,7 @@
 		
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		
-		<div class="byline-author">by <?php the_author(); ?></div>
+		<div class="byline-author">by <?php the_author_posts_link(); ?></div>
 
 	</header><!-- .entry-header -->
 
