@@ -923,7 +923,8 @@ a:focus {
  	z-index: 5;
  	background: #fff;
 	padding: 10px 10px;
-	margin: 0 0 0 -280px
+	right: 15%;
+
 }
 
 #colRight ul ul li {
