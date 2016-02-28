@@ -23,11 +23,13 @@ $width = $img[1];
 <?php // echo $width; ?>
 <?php// if($width == '640') : ?>
 	<div class="thumbnail">
+	<a href="<?php the_permalink(); ?>">
 	<?php
 		// Post thumbnail.
 		the_post_thumbnail();
 		//twentysixteen_post_thumbnail();
 	?>
+	</a>
 	</div>
 <?php// else : ?>
 	
