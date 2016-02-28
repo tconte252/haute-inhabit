@@ -29,6 +29,7 @@
 
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/plugins.js" type="text/javascript"></script>
 	<!--<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/base.js" type="text/javascript"></script>-->
+	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/searchBar.js" type="text/javascript"></script>
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/fixed-nav.js" type="text/javascript"></script>
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/responsive-menu.js" type="text/javascript"></script>
 
