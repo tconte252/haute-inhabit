@@ -435,11 +435,8 @@ function filter_ptags_on_images($content){
 
 	$format = get_post_format();
 
-	 if ( 'image' === $format ) {
-
 		return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 
-	}
 
 	return $content;
 }
