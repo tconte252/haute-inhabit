@@ -1333,7 +1333,9 @@ a.post-thumbnail:focus {
 .comment-content a:focus,
 .pingback .comment-body > a:hover,
 .pingback .comment-body > a:focus {
-	border-bottom: 0;
+	/*border-bottom: 0;*/
+	border: none;
+	color: #610b0b;
 }
 
 .entry-content a img,
