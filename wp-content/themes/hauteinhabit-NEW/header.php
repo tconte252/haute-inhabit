@@ -66,12 +66,13 @@
 			  		<li class="email"><a href="#"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/email.png" /></a><ul class="nav-newsletter">
 			<li><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Nav Subscribe') ) : ?><?php endif; ?></li>
 		</ul></li>
-			  		<li class="rss"><a href="/feed/" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/rss.png" /></a></li>
-			  		<li class="twitter"><a href="https://twitter.com/hauteinhabit" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/twitter.png" /></a></li>
-					<li class="facebook"><a href="https://www.facebook.com/hauteinhabit" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/facebook.png" /></a></li>
-					<li class="tumblr"><a href="http://hauteinhabit.tumblr.com/" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/tumblr.png" /></a></li>
-					<li class="pinterest"><a href="http://pinterest.com/hauteinhabit/" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/pinterest.png" /></a></li>
-					<li class="instagram"><a href="http://instagram.com/hauteinhabit" rel="external"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/instagram.png" /></a></li>
+			  		<li class="rss"><a href="/feed/" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/rss.png" /></a></li>
+			  		<li class="twitter"><a href="https://twitter.com/hauteinhabit" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/twitter.png" /></a></li>
+					<li class="facebook"><a href="https://www.facebook.com/hauteinhabit" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/facebook.png" /></a></li>
+					<li class="tumblr"><a href="http://hauteinhabit.tumblr.com/" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/tumblr.png" /></a></li>
+					<li class="pinterest"><a href="http://pinterest.com/hauteinhabit/" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/pinterest.png" /></a></li>
+					<li class="instagram"><a href="http://instagram.com/hauteinhabit" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/instagram.png" /></a></li>
+					<li class="bloglovin"><a href="https://www.bloglovin.com/blogs/haute-inhabit-6728795" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/bloglovin.png" /></a></li>
 				</ul>
 			</div>
 			<div id="colCenter">
