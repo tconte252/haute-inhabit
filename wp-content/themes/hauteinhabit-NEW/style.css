@@ -1083,7 +1083,6 @@ a:focus {
 .hentry {
 	background-color: #fff;
 	clear: both;
-	overflow: auto;
 	margin: 0 0 45px 0;
 	padding: 7.6923% 0 45px 0;
 	border-bottom: 1px solid #F1F1F2;
@@ -3397,3 +3396,48 @@ height: 60px;
     overflow: hidden;
 }
 */
+
+.metaslider .nivoSlider {
+    overflow: visible;
+}
+
+.metaslider .theme-default a.nivo-nextNav {
+    right: -45px;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 40px solid transparent !important;
+    border-bottom: 40px solid transparent !important;
+    border-left: 40px solid #000 !important;
+    opacity: inherit !important;
+    background: inherit !important;
+    background-position: inherit !important;
+
+}
+
+.metaslider .theme-default a.nivo-prevNav {
+    left: -45px;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 40px solid transparent !important;
+    border-bottom: 40px solid transparent !important;
+    border-right: 40px solid #000 !important;
+    opacity: inherit !important;
+    background: inherit !important;
+    background-position: inherit !important;
+}
+
+.theme-default a.nivo-prevNav:hover {
+
+    border-right: 40px solid #610b0b !important;
+
+}
+
+.theme-default a.nivo-nextNav:hover {
+
+    border-left: 40px solid #610b0b !important;
+
+}
+
+.nivo-directionNav a {
+	top: 35%;
+}
