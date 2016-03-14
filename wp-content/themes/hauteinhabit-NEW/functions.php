@@ -462,3 +462,21 @@ function wpdocs_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+add_filter( 'jetpack_relatedposts_filter_post_context', '__return_empty_string' );
+
+function jetpackme_related_posts_headline( $headline ) {
+$headline = sprintf(
+            '<h3 class="jp-relatedposts-headline">%s</h3>',
+            esc_html( 'SIMILAR TO THIS STORY' )
+            );
+return $headline;
+}
+
+add_filter( 'jetpack_relatedposts_filter_headline', 'jetpackme_related_posts_headline' );
+
+function jetpackme_more_related_posts( $options ) {
+    $options['size'] = 5;
+    return $options;
+}
+add_filter( 'jetpack_relatedposts_filter_options', 'jetpackme_more_related_posts' );

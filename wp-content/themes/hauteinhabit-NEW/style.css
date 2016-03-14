@@ -2566,7 +2566,19 @@ padding: 0;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+@media only screen and (max-width: 320px) {
+
+	.single #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post, #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+		width: 100% !important;
+}
+
+	.single #jp-relatedposts h3.jp-relatedposts-headline {
+		position: relative !important;
+		bottom: inherit !important;
+		left: inherit !important;
+    	padding: 0 !important;
+}
+
 
 	.metaslider .slides .ms-image img {
 		width: 100% !important;
@@ -3441,3 +3453,49 @@ height: 60px;
 .nivo-directionNav a {
 	top: 35%;
 }
+
+.jp-relatedposts-post-title {
+	display: none !important;
+}
+
+.single #jp-relatedposts h3.jp-relatedposts-headline {
+	text-align: center;
+	float: none ;
+	display: block ;
+	position: absolute;
+	bottom: 0;
+	left: 35%;
+	background: #fff ;
+	font-family: 'URW';
+    font-size: 1.5em ;
+    color: #000;
+    margin: 0 ;
+    padding: 10px 20px ;
+    font-weight: inherit;
+}
+
+#jp-relatedposts h3.jp-relatedposts-headline em:before {
+	border: none !important;
+	margin: 0 !important;
+}
+
+.single #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post {
+	opacity: inherit !important;
+	padding: 0 !important;
+	width: 20%;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:nth-child(3n+4), #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post:nth-child(3n+4) {
+	clear: none !important;
+}
+
+#jp-relatedposts {
+	padding-top: 0 !important;
+	padding-bottom: 20px !important;
+	margin: 0 !important;
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual {
+	margin: 0 !important;
+}
+
