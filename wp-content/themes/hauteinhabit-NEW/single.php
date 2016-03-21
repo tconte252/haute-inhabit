@@ -51,6 +51,34 @@ get_header(); ?>
 			<div class="nav-previous">
 				<?php previous_post_link('%link', '&lt; Previous Post', TRUE); ?>
 			</div>
+			<ul class="sharing-buttons">
+				<li class="share-label">Share this post</li>
+				<li>
+			    	<a class="email" href="mailto:?body=Read this post: <?php the_permalink(); ?>" target="_blank">
+			    		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/email-2.png" />
+			    	</a>
+			  	</li>
+			  	<li>
+			    	<a class="twitter" href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=hauteinhabit" target="_blank">
+			    		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/twitter-2.png" />
+			    	</a>
+			  	</li>
+				<li>
+					<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">	
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/facebook-2.png" />
+					</a>
+				</li>
+				<li>
+					<a class="tumblr" href="http://www.tumblr.com/share?v=3&u=<?php the_permalink(); ?>&t=<?php the_title(); ?>" target="_blank">	
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/tumblr-2.png" />
+					</a>
+				</li>
+				<li>
+					<a class="pinterest" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>" target="_blank">
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/pinterest-2.png" />
+					</a>
+				</li>
+			</ul>
 			<div class="nav-next">
 				<?php next_post_link( '%link', 'Newer Post &gt;', TRUE ); ?>
 			</div>
