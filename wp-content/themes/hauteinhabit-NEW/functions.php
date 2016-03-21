@@ -340,7 +340,8 @@ add_action( 'init', 'register_my_menu' );
 // Replaces the excerpt "more" text by a link
 function new_excerpt_more($more) {
     global $post;
-	return '... <a class="more-link" href="'. get_permalink($post->ID) . '">View more &gt;</a>';
+	//return '... <a class="more-link" href="'. get_permalink($post->ID) . '">View more &gt;</a>';
+    return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

@@ -66,6 +66,8 @@ $width = $img[1];
 
 			<?php the_excerpt(); ?>
 
+			<a class="more-link" href="<?php the_permalink(); ?>">View more &gt;</a>
+
 		</div>
 	</div>
 
