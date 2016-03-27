@@ -71,7 +71,7 @@
 					<li class="facebook"><a href="https://www.facebook.com/hauteinhabit" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/facebook.png" /></a></li>
 					<li class="tumblr"><a href="http://hauteinhabit.tumblr.com/" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/tumblr.png" /></a></li>
 					<li class="pinterest"><a href="http://pinterest.com/hauteinhabit/" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/pinterest.png" /></a></li>
-					<li class="instagram"><a href="http://instagram.com/hauteinhabit" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/instagram.png" /></a></li>
+					<li class="instagram"><a href="https://www.instagram.com/lainyhedaya/" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/instagram.png" /></a></li>
 					<li class="bloglovin"><a href="https://www.bloglovin.com/blogs/haute-inhabit-6728795" rel="external" target="_blank"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/bloglovin.png" /></a></li>
 				</ul>
 			</div>

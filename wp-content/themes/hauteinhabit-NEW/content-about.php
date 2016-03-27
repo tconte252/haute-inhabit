@@ -9,7 +9,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<img style="float: left; margin: 0 20px 50px 0;" class="alignnone size-full wp-image-3650" src="http://localhost/haute-inhabit/wp-content/uploads/2013/07/lainy-hedaya.jpg" alt="lainy-hedaya" width="476" height="713" />
+<img style="float: left; margin: 0 20px 50px 0;" class="alignnone size-full wp-image-3650" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2013/07/lainy-hedaya.jpg" alt="lainy-hedaya" width="476" height="713" />
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
