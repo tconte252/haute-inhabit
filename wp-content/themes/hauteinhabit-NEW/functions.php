@@ -347,11 +347,31 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 function haute_infinite_scroll_init() {
     add_theme_support( 'infinite-scroll', array(
-        'container'      => 'main',
+        'container' => 'main',
         'type' => 'click',
+        'render' => 'haute_infinite_scroll_render',
     ) );
 }
 add_action( 'after_setup_theme', 'haute_infinite_scroll_init' );
+
+function haute_infinite_scroll_render() {
+
+
+
+ while ( have_posts() ) : the_post();
+        ?>
+        <?php if (!get_post_format()) {
+
+					get_template_part( 'content', get_post_format() ); 
+
+				} else if (has_post_format('image')) {
+
+					get_template_part( 'content-new', get_post_format() ); 
+				}
+			?>
+        <?php
+    endwhile;
+}
 
 function filter_jetpack_infinite_scroll_js_settings( $settings ) {
 	$settings['text'] = __( 'Load more', 'l18n' );
