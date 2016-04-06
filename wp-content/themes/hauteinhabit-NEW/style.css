@@ -2830,6 +2830,7 @@ padding: 0;
 
 @media only screen and (min-device-width: 320px) and (max-width : 640px) {
 
+
 	.special {
 		padding: 0 17% 0 17%;
 	}
@@ -2859,7 +2860,7 @@ padding: 0;
 		margin: 10px 0 0 0;
 	}
 
-	.entry-title {
+	.entry-title, .format-image .entry-title {
 		font-size: 2em;
 	}
 
