@@ -2445,6 +2445,10 @@ padding: 0;
 	height: auto;
 }
 
+.single-format-standard img {
+	height: auto;
+}
+
 .single-format-image .alignleft img {
 	display: block;
 	margin: 0 0 40px 0;
@@ -2860,10 +2864,14 @@ padding: 0;
 	}
 
 	#masthead h1 {
-		font-size: 5.5rem;
+		font-size: 4rem;
 		line-height: 1;
-		margin: 10px 0 0 0;
-		padding: 0 20%;
+		margin: 20px 0 0 0;
+	}
+
+	body {
+		padding: 100px 0 0 0;
+
 	}
 
 	.menu-main-container {
