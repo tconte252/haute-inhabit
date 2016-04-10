@@ -793,6 +793,11 @@ a:focus {
 	font-family: "ITC";
 }
 
+.hdr span {
+background: #fff;
+padding: 10px 20px;
+}
+
 
 .main-menu #logo {
 	display: block;
@@ -1151,6 +1156,20 @@ a.post-thumbnail:focus {
     justify-content: center;
 }
 */
+
+.nav-links .sharing-buttons li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.nav-links .sharing-buttons {
+	margin: 0 0 0 25%;
+	list-style: none;
+}
+
+.nav-links .sharing-buttons .share-label {
+	color: #fff;
+}
 
 
 .thumbnail {
@@ -1642,6 +1661,13 @@ a.post-thumbnail:focus {
 	margin-bottom: 1.3333em;
 }
 
+.view {
+padding: 0 30%;
+display: block;
+text-align: center;
+font-weight: bold;
+}
+
 .page-links a,
 .page-links > span {
 	border: 1px solid #eaeaea;
@@ -1843,10 +1869,6 @@ a.post-thumbnail:focus {
 	    width: 30px;
 	     height: 30px;
 	
-}
-
-.infinite-wrap {
-	margin: 95px 0 0 0;
 }
 
 .infinite-loader {
@@ -2830,6 +2852,36 @@ padding: 0;
 
 @media only screen and (min-device-width: 320px) and (max-width : 640px) {
 
+	.view {
+		padding: 0;
+	}
+
+	.hdr span {
+		padding: 0;
+	}
+
+	.nav-previous {
+		margin: 0 0 20px 0;
+		text-align: center;
+	}
+
+	.nav-next {
+		text-align: center;
+	}
+
+	.nav-links .sharing-buttons {
+	margin: 0 0 20px 0;
+}
+
+	.nav-links .sharing-buttons li.share-label {
+		float: none;
+	}
+
+	.nav-links .sharing-buttons li {
+		margin: 0 10px 0 10px
+	}
+
+
 
 	.special {
 		padding: 0 17% 0 17%;
@@ -3520,20 +3572,6 @@ height: 60px;
 	margin: 0 !important;
 }
 
-.nav-links .sharing-buttons li {
-	float: left;
-	margin: 0 10px 0 0;
-}
-
-.nav-links .sharing-buttons {
-	margin: 0 0 0 25%;
-	list-style: none;
-}
-
-.nav-links .sharing-buttons .share-label {
-	color: #fff;
-}
-
 .thumbnailgridcontainer {
   display: none !important;
 }
@@ -3552,11 +3590,6 @@ padding: 0 30%;
 position: relative;
 margin: -20px 0 0 0;
 font-weight: normal;
-}
-
-.hdr span {
-background: #fff;
-padding: 10px 20px;
 }
 
 .hdr span a {
@@ -3722,12 +3755,7 @@ font-style: normal;
 font-size: .75em;
 }
 
-.view {
-padding: 0 30%;
-display: block;
-text-align: center;
-font-weight: bold;
-}
+
 
 .view:hover {
 color: #610b0b;
