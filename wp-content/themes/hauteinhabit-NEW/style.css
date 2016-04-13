@@ -2615,9 +2615,11 @@ padding: 0;
 		font-size: 2em;
 	}
 
-.single-format-image .wp-post-image {
+.single-format-image.wp-post-image {
 		margin: 0 0 50px 0;
 	}
+
+
 
 	#colLeft {
 		margin: 0 0 0 22px;
@@ -2887,15 +2889,15 @@ padding: 0;
 		padding: 0 17% 0 17%;
 	}
 
-#primary {
-	padding: 50px 1% 0 1%;
-}
+	#primary {
+		padding: 50px 5% 0 5%;
+	}
 
 	.entry-excerpt p {
 		display: none;
 	}
 
-	.single-format-image .wp-post-image {
+	.single-format-image .wp-post-image, .single-format-standard .wp-post-image {
 		margin: 0 0 50px 0;
 	}
 
