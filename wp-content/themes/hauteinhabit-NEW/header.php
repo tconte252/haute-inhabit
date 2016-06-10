@@ -38,7 +38,45 @@
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript">
+	
+	//mandatory----------------
+	var tumblrBlogLink="http://hauteinhabit.tumblr.com/";	
+	var tumblrApiKey="Ld2DyaUPZK2nkn4PnDkjVwcoJt0Fkez3A4q085HUq8z0hVtZgV";
+	
+	//optional-----------------
+	var tumbaxWidgetWidth = 800; 
+	var pathToLoadingImage = '<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/loader.gif';
+	var tumbaxColumns = 4;
+
+	
+	
+	/*
+	var tumblrBlogLink="http://loor-audiovisual.tumblr.com";
+	var tumblrBlogLink="http://assassincreeds.tumblr.com";
+	var tumblrBlogLink="http://starsinatelescope.tumblr.com";
+	var tumblrBlogLink="http://edoro.tumblr.com";
+	var tumblrBlogLink="http://pizzeta.tumblr.com";
+	var tumblrBlogLink="http://aegilaetus.tumblr.com/";
+	
+	
+	var tumblrApiKey="fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4";
+	*/
+	//optional parameters-----------------------------------------------
+	
+	
+	function goClicked() {
+		$('#tumbax').empty();
+		tumblrBlogLink=$('#tumblrBlogLink').val();
+		
+		prepareTumbax();
+	}
+	
+	</script>
 </head>
+
+
 
 <body <?php body_class(); ?>>
 

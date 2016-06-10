@@ -9,10 +9,9 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
-	<?php if(is_home() || is_page('Mood')) : ?>
+	<?php if(is_home()) : ?>
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Afilliate') ) : ?><?php endif; ?>
 	<?php endif; ?> 
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<div class="site-info">
@@ -32,6 +31,7 @@
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/searchBar.js" type="text/javascript"></script>
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/fixed-nav.js" type="text/javascript"></script>
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/responsive-menu.js" type="text/javascript"></script>
+
 
 	<script>
  
@@ -70,6 +70,10 @@ return false;
 });
  
 </script>
+<script>
+alert = function() {};
+</script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/tumbax.min.js" type="text/javascript"></script>
 
 	<?php wp_footer(); ?>
 
