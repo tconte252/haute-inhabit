@@ -795,6 +795,7 @@ a:focus {
 
 .search-wrapper {
 	position: relative;
+	z-index: 5;
 }
 
 .main-menu-scrolled {
@@ -1025,7 +1026,7 @@ padding: 10px 20px;
 	height: 65px;
 	border: 0;
 	font-size: 2.2em;
-	color: #a6a6a6;			
+	color: #fff;			
 	float: left;
 	width: 100%;
 	padding: 0 20%;
@@ -2567,6 +2568,10 @@ font-size: 4.5em;
    vertical-align: baseline;
 }
 
+.post-body p {
+	padding: 0 5% 0 5%;
+}
+
 .format-standard .entry {
     display: block;
     vertical-align: baseline;
@@ -2582,7 +2587,7 @@ font-size: 4.5em;
 	.thumbnail {
 		float: none;
 		margin: 0 auto;
-		max-width: 90%;
+		max-width: 100%;
 	}
 
 	.home .thumbnail img  {
@@ -2934,7 +2939,7 @@ font-size: 4.5em;
 	}
 
 	#primary {
-		padding: 50px 5% 0 5%;
+		padding: 50px 0;
 	}
 
 	.entry-excerpt p {

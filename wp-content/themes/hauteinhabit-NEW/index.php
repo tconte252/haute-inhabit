@@ -65,7 +65,6 @@ get_header(); ?>
 
 			?>
 
-
 			<?php if ( $count == 1 ) : ?>
   				<div class="special">
   					
@@ -110,8 +109,8 @@ get_header(); ?>
 
 					<div class="post-utility">
 						<div class="inner clear">
-						<h4 class="hdr"><span>On Instagram <a href="https://instagram.com/hauteinhabit/" target="_blank"> @HauteInhabit</a></span></h4>
-						<a class="view" href="https://instagram.com/hauteinhabit/" target="_blank">VIEW MORE &gt;</a>
+						<h4 class="hdr"><span>On Instagram <a href="https://www.instagram.com/lainyhedaya/" target="_blank"> @lainyhedaya</a></span></h4>
+						<a class="view" href="https://www.instagram.com/lainyhedaya/" target="_blank">VIEW MORE &gt;</a>
 					</div>
 				
 				</div>
