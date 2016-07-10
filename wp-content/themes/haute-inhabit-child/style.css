@@ -1,0 +1,637 @@
+/*
+ Theme Name:   Haute Inhabit Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     haute-inhabit
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Links
+# Fonts
+# Header
+# Navigation
+# Content
+	## Feed
+	## Post
+	## Page
+# Infinite Scroll
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active  {
+	color: #000;
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'ITC';
+  src: url('fonts/BlairITCStd-Light.otf');
+}
+
+@font-face {
+  font-family: 'ITC Bold';
+  src: url('fonts/BlairITCStd-Bold.otf');
+}
+
+@font-face {
+  font-family: 'URW';
+  src: url('fonts/FirminDidURWTOT-Rom.otf');
+}
+
+@font-face {
+  font-family: 'Scotch';
+  src: url('fonts/ScotchRomanMTStd.otf');
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header h1 {
+	font-family: 'URW';
+	text-align: center;
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0;
+}
+
+#header h1 a {
+	color: #000;
+}
+
+.top-bar, .top-bar ul {
+	background: #fff;
+	font-family: "ITC";
+}
+
+#header .title-bar-title {
+	font-family: "URW";
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+#header .title-bar-title a {
+	color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Main Navigation
+--------------------------------------------------------------*/
+
+#nav-menu {
+	box-shadow: 0 2px 3px rgba(0,0,0,.1);
+}
+
+.h, .i {
+	font-family: "ITC Bold";
+}
+
+.h {
+	color: #0D0F12;
+}
+
+.i {
+	color: #BC1A1B;
+}
+
+.menu-icon {
+	border: none;
+	background-color: inherit;
+	box-shadow: none;
+}
+
+.menu-icon:focus, .menu-icon:hover, .menu-icon:visited {
+	box-shadow: none;
+	border-color: #fff;
+}
+
+.menu-icon:hover::after {
+	background-color: #fff;
+	box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+}
+
+#nav-menu #menu-main li {
+	list-style-type: none;
+	vertical-align: inherit;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+	content: initial;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+	padding-right: 1rem;
+}
+
+.top-bar {
+	padding-bottom: 0;
+}
+
+/* Variables */
+/* Small Navigation */
+.logo-small {
+  float: right; }
+
+.title-bar {
+  padding: 0 .5rem; }
+
+.menu-icon,
+.title-bar-title {
+  position: relative;
+  top: 10px; }
+
+/* Medium-Up Navigation */
+@media only screen and (min-width: 40rem) {
+  .logo-wrapper {
+    position: relative; }
+    .logo-wrapper .logo {
+      width: 118px;
+      height: 92px;
+      position: absolute;
+      left: 42%;
+      right: 50%;
+      margin-left: -49px; }
+
+
+  .top-bar-right {
+    width: 50%;
+    padding-left: 86px; }
+    .top-bar-right ul {
+      float: left; }
+
+  .top-bar-left {
+    width: 50%;
+    padding-right: 86px; }
+    .top-bar-left ul {
+      float: right; } }
+
+.is-dropdown-submenu {
+	box-shadow: 0 2px 3px rgba(0,0,0,.1);
+	border: none;
+	min-width: inherit;
+	padding: 5px 25px 5px 25px
+}
+
+.is-dropdown-submenu li {
+	padding: 5px 0;
+}
+
+.is-drilldown-submenu {
+	margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+## Footer Navigation
+--------------------------------------------------------------*/
+#colophon {
+	background-color: #000;
+    padding: 3.84615% 20%;
+    clear: both;
+    color: #fff;
+    height: 100%;
+    margin: 50px 0 0 0;
+    position: relative;
+}
+
+.menu-footer-container {
+	text-transform: uppercase;
+	font-family: 'ITC';
+	font-size: .75rem;
+}
+
+.menu-footer-container li > a {
+	display: inline;
+	color: #fff;
+}
+
+.menu-footer-container ul li:last-child .divider {
+	display: none;
+}
+
+#mailchimpsf_widget-2 .widget {
+	margin: 0;
+}
+
+#mailchimpsf_widget-2 .widget-title {
+    font-family: 'URW';
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0 !important;
+}
+
+#mailchimpsf_widget-2 #mc_signup_submit {
+	width: 100% !important;
+    background: #D1D2D4;
+    color: #000;
+    margin: .25em 0 0 0 !important;
+    font-size: 1.50em;
+    padding: 0.35em 0 !important;
+    font-family: 'URW';
+    font-weight: normal !important;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+}
+
+#mc_signup_form {
+	padding: 0;
+}
+
+#mc_signup_form .mc_merge_var {
+	margin: 0;
+}
+
+#mc_signup_form .mc_var_label {
+	display: none;
+}
+
+#mc_signup_form .mc_input {
+	color: #000;
+	border-radius: 0;
+	margin: 0;
+}
+
+#mc_signup_form .mc_input:focus {
+	border: none;
+	box-shadow: none;
+	transition: inherit;
+}
+
+#mc_display_rewards {
+	display: none;
+}
+
+.copyright {
+	text-align: center;
+	font-family: 'ITC';
+	text-transform: uppercase;
+	font-size: .75rem;
+	margin: 45px 0 0;
+}
+
+/*--------------------------------------------------------------
+# Search
+--------------------------------------------------------------*/
+.top-bar-right .search {
+	color: #000;
+	cursor: pointer;
+	font-family: "ITC";
+}
+
+#menu_search .search-field {
+	background: #000 !important;
+	border: 0 !important;
+	color: #fff !important;			
+	float: left !important;
+	width: 100% !important;
+}
+
+#menu_search, #menu_search .search-submit {
+	display: none;
+}
+
+#menu_search .search-field {
+	background: #000;
+	height: 65px;
+	border: 0;
+	font-size: 2rem;
+	color: #fff;			
+	float: left;
+	width: 100%;
+	padding: 0 20%;
+	margin-bottom: 0;
+	border-radius: inherit;
+}
+
+#menu_search .search-field:focus {
+	box-shadow: none;
+}
+
+.search-menu {
+	position: absolute;
+	width: 100%;
+}
+
+.search-menu-scrolled {
+    position: fixed;
+    width: 100%;
+}
+
+.title-bar .search {
+	padding: 15px 0;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Feed
+--------------------------------------------------------------*/
+.hfeed .hentry {
+	clear: both;
+	overflow: auto;
+	text-align: center;
+	margin: 45px 0 0 0;
+	padding: 0 0 45px 0;
+	border-bottom: 1px solid #F1F1F2;
+}
+
+.hentry a:hover {
+	color: #610b0b;
+}
+
+.entry-header, .entry-excerpt {
+	font-family: "URW";
+}
+
+.format-image .entry-header {
+	margin: 20px 0 0;
+}
+
+.entry-meta {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.entry-meta, .entry-meta a {
+	color: #A7A9AB;
+}
+
+.entry-title {
+	font-size: 2.5rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.entry-excerpt {
+	color: #A7A9AB;
+	font-size: 1.25rem;
+	font-style: italic;
+}
+
+.entry-footer {
+	font-family: "ITC";
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+.single .hentry {
+	text-align: left;
+	border: none;
+	margin: 45px 0 0 0;
+}
+
+.single .entry-header {
+	text-align: center;
+}
+
+
+.single .entry-meta, .single .byline {
+	font-size: 1.25rem;
+}
+
+.single time {
+	display: block;
+}
+
+.single .entry-title {
+	font-family: "URW";
+	font-size: 4rem;
+	color: #000;
+	margin: 0;
+
+}
+
+.single .byline {
+	font-style: italic;
+	color: #000;
+}
+
+.single .entry-content {
+	font-family: "Scotch";
+	font-size: 1.25rem;
+	color: #000;
+}
+
+.single .wp-post-image {
+	margin: 0 0 60px 0;
+}
+
+.dropcap {
+	font-size: 6rem;
+    line-height: 60px;
+}
+
+.single .post-navigation {
+	background: #231F20;
+	text-transform: uppercase;
+	overflow: auto;
+	font-family: "ITC";
+	color: #fff;
+
+}
+
+.single .post-navigation ul {
+	vertical-align: top;
+}
+
+.single .post-navigation a {
+	color: #fff;
+}
+
+#disqus {
+	margin-top: 24px;
+}
+
+#disqus h4 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "URW";
+}
+
+/*--------------------------------------------------------------
+# Infinite Scroll
+--------------------------------------------------------------*/
+#infinite-handle {
+	text-align: center;
+    margin: 40px 0;
+}
+
+#infinite-handle span {
+	font-size: 2.45em !important;
+    padding: 8px 52px !important;
+    background-color: #000 !important;
+    font-family: 'URW' !important;
+    color: #fff !important;
+}
+
+#infinite-handle span button {
+	box-shadow: none;
+	text-shadow: none;
+    text-transform: uppercase;
+}
+
+.infinite-loader {
+	margin: 40px 50% 0 50%;
+}
+
+/*--------------------------------------------------------------
+# Affiliate
+--------------------------------------------------------------*/
+
+.affiliate {
+	text-align: center;
+	font-family: "URW";
+	font-size: 1.25rem;
+	margin: 0 0 -125px;
+	position: relative;
+	z-index: 2;
+
+}
+
+.affiliate span {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.affiliate a {
+	text-transform: uppercase;
+}
+
+.affiliate .view {
+	font-family: "ITC";
+	font-weight: bold;
+	display: block;
+	padding: 0 0 6px;
+}
+
+.shopthepost-widget, .hdr {
+	background: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Small Screen
+--------------------------------------------------------------*/
+
+@media handheld, only screen and (max-width: 767px) {
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+	.menu-footer-container {
+		display: none;
+	}
+
+	.copyright {
+		margin: 0;
+		font-size: .5rem;
+	}
+
+/*--------------------------------------------------------------
+## Feed
+--------------------------------------------------------------*/
+	.columns {
+		padding: 0;
+	}
+
+	.entry-header {
+		margin: 12px 0 0;
+	}
+
+	.entry-title {
+		font-size: 2rem;
+	}
+
+	.entry-excerpt {
+		display: none;
+	}
+
+/*--------------------------------------------------------------
+## Infinite Scroll
+--------------------------------------------------------------*/
+	#infinite-handle span {
+		font-size: 2rem !important;
+	}
+/*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+	.single .entry-meta, .single .byline {
+		font-size: 1rem;
+	}
+
+	.single .entry-title {
+		font-size: 2rem;
+	}
+
+	.single .entry-content p {
+		padding: 0 5%;
+	}
+
+	.single .post-navigation .social {
+		display: inline-block;
+		margin: 6px 0;
+	}
+
+	.single .post-navigation {
+		font-size: 1rem;
+	}
+
+	#disqus h4 {
+		font-size: 2em;
+	}
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+
+	.submenu > li > a {
+	display: block;
+    padding: 0.7rem 1rem;
+    line-height: 1;
+	}
+/*--------------------------------------------------------------
+## Search
+--------------------------------------------------------------*/
+	#menu_search .search-field {
+		height: auto;
+		font-size: 1.5rem;
+	}
+
+	[type='placeholder'] {
+		color: #fff;
+	}
+}

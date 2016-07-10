@@ -25,12 +25,12 @@
 		</div>
 		
 	</footer><!-- .site-footer -->
-
+	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/searchBar.js" type="text/javascript"></script>
 	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/plugins.js" type="text/javascript"></script>
 	<!--<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/base.js" type="text/javascript"></script>-->
-	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/searchBar.js" type="text/javascript"></script>
-	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/fixed-nav.js" type="text/javascript"></script>
-	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/responsive-menu.js" type="text/javascript"></script>
+	
+	<!--<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/fixed-nav.js" type="text/javascript"></script>
+	<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/responsive-menu.js" type="text/javascript"></script>-->
 
 
 	<script>
@@ -74,6 +74,10 @@ return false;
 alert = function() {};
 </script>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/tumbax.min.js" type="text/javascript"></script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/vendor/jquery.js"></script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/vendor/what-input.js"></script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/js/vendor/foundation.min.js"></script>
+<script>$(document).foundation();</script>
 
 	<?php wp_footer(); ?>
 

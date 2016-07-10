@@ -12,16 +12,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<?php
-/*
-$tn_id = get_post_thumbnail_id( $post->ID );
 
-$img = wp_get_attachment_image_src( $tn_id, 'full' );
-$width = $img[1];
-*/
-?>
-<?php // echo $width; ?>
-<?php// if($width == '640') : ?>
 	<div class="thumbnail">
 	<a href="<?php the_permalink(); ?>">
 	<?php
@@ -31,9 +22,7 @@ $width = $img[1];
 	?>
 	</a>
 	</div>
-<?php// else : ?>
-	
-<?php// endif; ?>
+
 	<div class="entry">
 		<header class="entry-header">
 

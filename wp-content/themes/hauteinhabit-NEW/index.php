@@ -33,7 +33,7 @@ get_header(); ?>
 
 		if ( $query->have_posts() ):
 
-		$c = 0;
+		$count = 0;
 
 		?>
 
@@ -46,7 +46,7 @@ get_header(); ?>
 			<?php
 			// Start the loop.
 			while ($query->have_posts() ) : $query->the_post();
-			$c++;
+			$count++;
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -66,7 +66,7 @@ get_header(); ?>
 			?>
 
 			<?php if ( $count == 1 ) : ?>
-  				<div class="special">
+ <!-- 				<div class="special">
   					
   					<div id="insta" class="cf">
 
@@ -102,22 +102,22 @@ get_header(); ?>
 
 						</div>
 
-					<div id="slider-nav">
-						<a id="prev2" class="prev" style="display: block;" href="#"> </a>
-						<a id="next2" class="next" style="display: block;" href="#"> </a>
-					</div>
+						<div id="slider-nav">
+							<a id="prev2" class="prev" style="display: block;" href="#"> </a>
+							<a id="next2" class="next" style="display: block;" href="#"> </a>
+						</div>
 
-					<div class="post-utility">
-						<div class="inner clear">
-						<h4 class="hdr"><span>On Instagram <a href="https://www.instagram.com/lainyhedaya/" target="_blank"> @lainyhedaya</a></span></h4>
-						<a class="view" href="https://www.instagram.com/lainyhedaya/" target="_blank">VIEW MORE &gt;</a>
-					</div>
+						<div class="post-utility">
+							<div class="inner clear">
+							<h4 class="hdr"><span>On Instagram <a href="https://www.instagram.com/lainyhedaya/" target="_blank"> @lainyhedaya</a></span></h4>
+							<a class="view" href="https://www.instagram.com/lainyhedaya/" target="_blank">VIEW MORE &gt;</a>
+						</div>
 				
-				</div>
+					</div>
 
-			</div>
+				</div>
 			
-  		</div>
+  		</div>-->
 			<?php endif // ( $count == 2 ) ?>
 
 			<?php $count++ ?>
