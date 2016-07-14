@@ -91,6 +91,8 @@ a:focus {
 	font-family: "URW";
     font-size: 1.25rem;
     text-transform: uppercase;
+    top: 13px;
+
 }
 
 #header .title-bar-title a {
@@ -206,6 +208,11 @@ a:focus {
 .is-drilldown-submenu {
 	margin-left: 0;
 }
+
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+	content: none !important;
+}
+
 
 /*--------------------------------------------------------------
 ## Footer Navigation
@@ -450,7 +457,7 @@ a:focus {
 }
 
 .dropcap {
-	font-size: 6rem;
+	font-size: 4rem;
     line-height: 60px;
 }
 
@@ -481,6 +488,30 @@ a:focus {
     font-style: italic;
     font-weight: bold;
     font-family: "URW";
+}
+
+/*--------------------------------------------------------------
+## Page
+--------------------------------------------------------------*/
+.page article {
+	font-family: "Scotch";
+	font-size: 1.25rem;
+}
+
+.page .entry-title {
+	font-family: "URW";
+	font-size: 4rem;
+	color: #000;
+	margin: 0;
+
+}
+
+.page .entry-title {
+	text-align: center;
+}
+
+.page .entry-content {
+	margin: 0;
 }
 
 /*--------------------------------------------------------------

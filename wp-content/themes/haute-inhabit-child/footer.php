@@ -27,7 +27,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'after' => ' | ', 'menu_class' => 'vertical medium-horizontal menu' ) ); ?>
 				</div>
 				<div class="large-3 columns">
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Subscription') ) : ?><?php endif; ?>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Subscribe') ) : ?><?php endif; ?>
 				</div>
 			</div>
 			<div class="column row">
@@ -41,6 +41,7 @@
 
 <?php wp_footer(); ?>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit-child/js/searchBar.js"></script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit-child/js/tumbax.min.js"></script>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/vendor/jquery.js"></script>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/vendor/what-input.js"></script>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/vendor/foundation.min.js"></script>

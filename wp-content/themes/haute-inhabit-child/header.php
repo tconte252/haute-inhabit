@@ -18,6 +18,26 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/css/foundation.css" />
 
+<script type="text/javascript">
+	
+	//mandatory----------------
+	var tumblrBlogLink="http://hauteinhabit.tumblr.com/";	
+	var tumblrApiKey="Ld2DyaUPZK2nkn4PnDkjVwcoJt0Fkez3A4q085HUq8z0hVtZgV";
+	
+	//optional-----------------
+	var tumbaxWidgetWidth = 800; 
+	var pathToLoadingImage = '<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit-child/img/loader.gif';
+	var tumbaxColumns = 4;
+	
+	function goClicked() {
+		$('#tumbax').empty();
+		tumblrBlogLink=$('#tumblrBlogLink').val();
+		
+		prepareTumbax();
+	}
+
+</script>
+
 <?php wp_head(); ?>
 </head>
 
@@ -60,38 +80,46 @@
 			  
 					  	<!-- Right Nav Section -->
 					  	<div class="top-bar-right">
-						    <ul class="vertical medium-horizontal menu hide-for-small-only" data-responsive-menu="drilldown medium-dropdown">
-						    	<li class="rss">
+						    <ul class="vertical medium-horizontal dropdown menu hide-for-small-only" data-dropdown-menu>
+						    	<li>
+						    		<a href="#">
+									<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/email.png" />
+									</a>
+									<ul class="menu">
+										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Subscribe') ) : ?><?php endif; ?>
+									</ul>
+						    	</li>
+						    	<li>
 						    		<a href="/feed/" rel="external" target="_blank">
 						    			<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/rss.png" />
 						    		</a>
 						    	</li>
-						      	<li class="twitter">
+						      	<li>
 						      		<a href="https://twitter.com/LainyHedaya" rel="external" target="_blank">
 						      			<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/twitter.png" />
 						      		</a>
 						      	</li>
-						        <li class="facebook">
+						        <li>
 						        	<a href="https://www.facebook.com/hauteinhabit" rel="external" target="_blank">
 						        		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/facebook.png" />
 						        	</a>
 						        </li>
-						        <li class="tumblr">
+						        <li>
 						        	<a href="http://hauteinhabit.tumblr.com/" rel="external" target="_blank">
 						        		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/tumblr.png" />
 						        	</a>
 						        </li>
-						        <li class="pinterest">
+						        <li>
 						        	<a href="http://pinterest.com/hauteinhabit/" rel="external" target="_blank">
 						        		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/pinterest.png" />
 						        	</a>
 						        </li>
-						        <li class="instagram">
+						        <li>
 						        	<a href="https://www.instagram.com/lainyhedaya/" rel="external" target="_blank">
 						        		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/instagram.png" />
 						        	</a>
 						        </li>
-						        <li class="bloglovin">
+						        <li>
 						        	<a href="https://www.bloglovin.com/blogs/haute-inhabit-6728795" rel="external" target="_blank">
 						        		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/bloglovin.png" />
 						        	</a>
