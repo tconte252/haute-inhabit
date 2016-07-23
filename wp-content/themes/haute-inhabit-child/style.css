@@ -192,7 +192,8 @@ a:focus {
     width: 50%;
     padding-right: 86px; }
     .top-bar-left ul {
-      float: right; } }
+      float: right; } 
+  }
 
 .is-dropdown-submenu {
 	box-shadow: 0 2px 3px rgba(0,0,0,.1);
@@ -493,12 +494,16 @@ a:focus {
 /*--------------------------------------------------------------
 ## Page
 --------------------------------------------------------------*/
+.page {
+	color: #000;
+}
+
 .page article {
 	font-family: "Scotch";
 	font-size: 1.25rem;
 }
 
-.page .entry-title {
+.page .entry-title, .search .page-title, .category .page-title {
 	font-family: "URW";
 	font-size: 4rem;
 	color: #000;
@@ -506,13 +511,23 @@ a:focus {
 
 }
 
-.page .entry-title {
+.page .entry-title, .category .page-title, .search .page-title {
 	text-align: center;
 }
 
 .page .entry-content {
 	margin: 0;
 }
+
+.search .page-header, .category .page-title {
+	margin: 45px 0 0 0;
+	text-transform: uppercase;
+}
+
+.page-id-637 .entry-title {
+	margin: 45px 0 0 0;
+}
+
 
 /*--------------------------------------------------------------
 # Infinite Scroll
@@ -574,12 +589,39 @@ a:focus {
 	background: #fff;
 }
 
+/*--------------------------------------------------------------
+# Tumblr
+--------------------------------------------------------------*/
+.tumblr-container {
+	position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.tumblr-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*--------------------------------------------------------------
-# Small Screen
+# Small/Medium Screen
+--------------------------------------------------------------*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em), screen and (max-width: 39.9375em) {
+/*--------------------------------------------------------------
+## Page
 --------------------------------------------------------------*/
 
-@media handheld, only screen and (max-width: 767px) {
+	.entry-content p {
+		padding: 0 5%;
+	}
+
+	.page .entry-title, .category .page-title {
+		font-size: 2.5rem;
+	}
 
 /*--------------------------------------------------------------
 ## Footer
@@ -604,8 +646,12 @@ a:focus {
 		margin: 12px 0 0;
 	}
 
-	.entry-title {
+	.entry-title, .search .page-title {
 		font-size: 2rem;
+	}
+
+	.search .page-title, .category .page-title {
+		text-align: center;
 	}
 
 	.entry-excerpt {
@@ -626,7 +672,7 @@ a:focus {
 	}
 
 	.single .entry-title {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 
 	.single .entry-content p {

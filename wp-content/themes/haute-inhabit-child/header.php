@@ -18,26 +18,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/css/foundation.css" />
 
-<script type="text/javascript">
-	
-	//mandatory----------------
-	var tumblrBlogLink="http://hauteinhabit.tumblr.com/";	
-	var tumblrApiKey="Ld2DyaUPZK2nkn4PnDkjVwcoJt0Fkez3A4q085HUq8z0hVtZgV";
-	
-	//optional-----------------
-	var tumbaxWidgetWidth = 800; 
-	var pathToLoadingImage = '<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit-child/img/loader.gif';
-	var tumbaxColumns = 4;
-	
-	function goClicked() {
-		$('#tumbax').empty();
-		tumblrBlogLink=$('#tumblrBlogLink').val();
-		
-		prepareTumbax();
-	}
-
-</script>
-
 <?php wp_head(); ?>
 </head>
 
