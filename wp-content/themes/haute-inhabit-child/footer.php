@@ -45,7 +45,7 @@
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/vendor/jquery.js"></script>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/vendor/what-input.js"></script>
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/vendor/foundation.min.js"></script>
-<script>$(document).foundation();</script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/haute-inhabit/js/app.js"></script>
 
 </body>
 </html>

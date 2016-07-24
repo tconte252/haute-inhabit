@@ -109,6 +109,7 @@ a:focus {
 
 #nav-menu {
 	box-shadow: 0 2px 3px rgba(0,0,0,.1);
+	text-transform: uppercase;
 }
 
 .h, .i {
@@ -153,7 +154,35 @@ a:focus {
 }
 
 .top-bar {
-	padding-bottom: 0;
+	padding: 0 .5rem;
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	ul.center {
+		text-align: center;
+	}
+
+	.menu.medium-horizontal > li, ul.center li {
+		display: inline-block;
+	}
+
+	.menu > li > a {
+		padding: .7rem .5rem;
+	}
+
+	.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a {
+		padding-right: .5rem;
+	}
+
+}
+
+@media screen and (min-width: 75em) {
+
+	.hide-for-xlarge-only {
+		display: none !important;
+	}
+
 }
 
 /* Variables */
@@ -167,33 +196,7 @@ a:focus {
 .menu-icon,
 .title-bar-title {
   position: relative;
-  top: 10px; }
-
-/* Medium-Up Navigation */
-@media only screen and (min-width: 40rem) {
-  .logo-wrapper {
-    position: relative; }
-    .logo-wrapper .logo {
-      width: 118px;
-      height: 92px;
-      position: absolute;
-      left: 42%;
-      right: 50%;
-      margin-left: -49px; }
-
-
-  .top-bar-right {
-    width: 50%;
-    padding-left: 86px; }
-    .top-bar-right ul {
-      float: left; }
-
-  .top-bar-left {
-    width: 50%;
-    padding-right: 86px; }
-    .top-bar-left ul {
-      float: right; } 
-  }
+  top: 10px; } 
 
 .is-dropdown-submenu {
 	box-shadow: 0 2px 3px rgba(0,0,0,.1);
@@ -457,6 +460,10 @@ a:focus {
 	margin: 0 0 60px 0;
 }
 
+.single .category-instagram .entry-content {
+	text-align: center;
+}
+
 .dropcap {
 	font-size: 4rem;
     line-height: 60px;
@@ -597,6 +604,7 @@ a:focus {
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
+    margin: 10px 0 0 0;
 }
 
 .tumblr-container iframe {
