@@ -163,6 +163,10 @@ a:focus {
 		text-align: center;
 	}
 
+	.menu-item-3667 {
+		margin: 0 0 0 10%;
+	}
+
 	.menu.medium-horizontal > li, ul.center li {
 		display: inline-block;
 	}
@@ -246,11 +250,11 @@ a:focus {
 	display: none;
 }
 
-#mailchimpsf_widget-2 .widget {
+.widget_mailchimpsf_widget .widget {
 	margin: 0;
 }
 
-#mailchimpsf_widget-2 .widget-title {
+.widget_mailchimpsf_widget .widget-title {
     font-family: 'URW';
     font-weight: normal;
     font-size: 1.5rem;
@@ -258,7 +262,7 @@ a:focus {
     margin: 0 !important;
 }
 
-#mailchimpsf_widget-2 #mc_signup_submit {
+.widget_mailchimpsf_widget #mc_signup_submit {
 	width: 100% !important;
     background: #D1D2D4;
     color: #000;
@@ -299,6 +303,44 @@ a:focus {
 
 #mc_display_rewards {
 	display: none;
+}
+
+#header .mc_merge_var, 
+#header .mc_signup_submit {
+	float: left;
+}
+
+#header .mc_signup_submit {
+	margin: 7px 0 0 8px;
+}
+
+#header #mc_signup_form .mc_input {
+	padding: 5px !important;
+	background: none;
+}
+
+#header #mc_signup_submit {
+	width: 100% !important;
+	color: #000;
+	background: none;
+	margin: 0 !important;
+	font-size: 1em;
+	padding: 0 !important;
+	font-family: 'ITC';
+    font-weight: normal !important;
+}
+
+#header .widgettitle {
+	display: none;
+}
+
+#header .mail-drop {
+	width: 340px;
+	padding: 10px
+}
+
+#header .widget {
+	margin: 0;
 }
 
 .copyright {
@@ -615,10 +657,40 @@ a:focus {
     height: 100%;
 }
 
+#slider-nav .prev {
+    left: -45px;
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent; 
+	border-right:40px solid #000; 
+}
+#slider-nav .next {
+right: -45px;
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 40px solid #000;
+}
+
+
 /*--------------------------------------------------------------
 # Small/Medium Screen
 --------------------------------------------------------------*/
-@media screen and (min-width: 40em) and (max-width: 63.9375em), screen and (max-width: 39.9375em) {
+@media screen and (min-width: 40em) and (max-width: 63.9375em), screen and (max-width: 39.9375em), screen and (max-width: 74.9375em) and (min-width: 64em) {
+
+	#slider-nav .prev {
+    left: 0;
+	}
+	#slider-nav .next {
+	right: 0;
+
+	}
+
+	.menu-item-3667 {
+		margin-left: 0;
+	}
 /*--------------------------------------------------------------
 ## Page
 --------------------------------------------------------------*/
@@ -719,4 +791,263 @@ a:focus {
 	[type='placeholder'] {
 		color: #fff;
 	}
+}
+
+.metaslider .theme-default a.nivo-nextNav {
+	background: url('http://www.hauteinhabit.com/wp-content/uploads/2015/08/HI-ig-slider-next.png') !important;
+	font-size: 0 !important;
+	border-radius: 60px !important;
+	width: 60px;
+	height: 60px;
+
+}
+
+.metaslider .theme-default a.nivo-prevNav {
+	background: url('http://www.hauteinhabit.com/wp-content/uploads/2015/08/HI-ig-slider-prev.png') !important;
+	font-size: 0 !important;
+	border-radius: 60px !important;
+	width: 60px;
+	height: 60px;
+}
+
+/*
+.metaslider .theme-default a.nivo-nextNav {
+    right: -45px;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 40px solid transparent !important;
+    border-bottom: 40px solid transparent !important;
+    border-left: 40px solid #000 !important;
+    opacity: inherit !important;
+    background: inherit !important;
+    background-position: inherit !important;
+
+}
+
+.metaslider .theme-default a.nivo-prevNav {
+    left: -45px;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 40px solid transparent !important;
+    border-bottom: 40px solid transparent !important;
+    border-right: 40px solid #000 !important;
+    opacity: inherit !important;
+    background: inherit !important;
+    background-position: inherit !important;
+}
+
+
+.theme-default a.nivo-prevNav:hover {
+
+    border-right: 40px solid #610b0b !important;
+
+}
+
+.theme-default a.nivo-nextNav:hover {
+
+    border-left: 40px solid #610b0b !important;
+
+}
+*/
+
+/*.nivoSlider {
+    overflow: visible;
+    margin: 0 0 1.6em 0 !important;
+}
+
+.nivo-directionNav a {
+	top: 35%;
+}*/
+
+.orbit {
+	margin: 45px 0 0 0;
+	padding: 0 0 45px 0;
+	border-bottom: 1px solid #F1F1F2
+}
+
+.view {
+display: block;
+text-align: center;
+text-transform: uppercase;
+font-style: normal;
+font-family: "ITC";
+font-weight: bolder;
+}
+
+.hdr {
+	color: #000;
+    font-family: 'URW, sans-serif';
+    font-size: 1.5em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0 30%;
+    position: relative;
+    font-weight: normal;
+}
+
+.hdr span {
+    background: #fff;
+    padding: 10px 20px;
+}
+
+.hdr span a {
+    font-style: italic;
+    text-transform: lowercase;
+   }
+
+.thumbnailgridcontainer {
+  display: none !important;
+}
+
+.owl-carousel {
+position: relative;
+}
+.owl-prev,
+.owl-next {
+position: absolute;
+top: 33%;
+margin-top: -10px; // Half of the prev/next buttons height here in negatives to center them perfectly
+}
+
+.owl-prev {
+left: -40px;
+background: url('http://www.hauteinhabit.com/wp-content/uploads/2015/08/HI-ig-slider-prev.png') !important;
+font-size: 0 !important;
+border-radius: 60px !important;
+width: 60px;
+height: 60px;
+}
+.owl-next {
+right: -40px;
+background: url('http://www.hauteinhabit.com/wp-content/uploads/2015/08/HI-ig-slider-next.png') !important;
+font-size: 0 !important;
+border-radius: 60px !important;
+width: 60px;
+height: 60px;
+}
+
+.list_carousel {
+    clear: both;
+    display: block;
+    height: 210px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.list_carousel ul {
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.list_carousel li {
+    color: #333;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 210px;
+    padding: 0;
+    width: 215px;
+}
+.list_carousel li img {
+    height: auto;
+    position: absolute;
+    width: 210px;
+}
+.list_carousel.responsive {
+    margin-left: 0;
+    width: auto;
+}
+.list_carousel .clearfix {
+    clear: both;
+    float: none;
+}
+.list_carousel a.prev {
+    background: rgba(0, 0, 0, 0) url("images/arrows.png") no-repeat scroll 0 0;
+    bottom: 20px;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 50px;
+    width: 11px;
+}
+.list_carousel a.next {
+    background: rgba(0, 0, 0, 0) url("images/slider-arrow.jpg") no-repeat scroll right center;
+    bottom: 20px;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    width: 11px;
+}
+#foo2 {
+    position: relative;
+}
+.box {
+    height: 210px;
+    width: 210px;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.55) none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.box:hover .overlay {
+    opacity: 1;
+}
+.overlay-text {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Minion Pro 1167263",Times,"Times New Roman",serif
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+#slider-nav {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: -135px;
+}
+.prev, .next {
+    display: block;
+    height: 45px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 30px;
+}
+
+
+.single #main .carousel .slide {
+    width: 105px !important;
+    height: auto !important;
+    margin: 0 14px 20px 0 !important;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    overflow: hidden;
+}
+
+.thumbnail {
+	margin-top: 2rem;
+	border: none;
+	box-shadow: none;
+}
+
+.thumbnail:hover {
+	box-shadow: none;
+}
+
+.home .format-standard {
+	display:flex;
+	align-items:center;
 }

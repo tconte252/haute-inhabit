@@ -32,6 +32,13 @@
 	}
 	add_filter( 'infinite_scroll_js_settings', 'filter_jetpack_infinite_scroll_js_settings' );
 
+	function exclude_category( $query ) {
+	    if ( $query->is_home() && $query->is_main_query() ) {
+	        $query->set( 'cat', '-460' );
+	    }
+	}
+	add_action( 'pre_get_posts', 'exclude_category' );
+
 	/*
 	 * Register sidebars.
 	 */

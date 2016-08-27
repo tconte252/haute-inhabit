@@ -27,7 +27,15 @@ get_header(); ?>
 	<?php $posts = query_posts($query_string); if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<nav class="navigation post-navigation menu-centered" role="navigation">
 			<ul class="vertical medium-horizontal menu">
-				<li><?php previous_post_link('%link', '&lt; Previous'); ?></li>
+				<li>
+					<?php 
+						if ( in_category('Instagram') ) {
+							previous_post_link('%link', '&lt; Previous', TRUE); 
+						} else {
+							previous_post_link('%link', '&lt; Previous', FALSE, '460');
+						}
+					?>
+				</li>
 				<li class="social">
 			    	<a href="mailto:?body=Read this post: <?php the_permalink(); ?>" target="_blank">
 			    		<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/email-2.png" />
@@ -53,7 +61,15 @@ get_header(); ?>
 						<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/hauteinhabit-NEW/img/pinterest-2.png" />
 					</a>
 				</li>
-				<li><?php next_post_link('%link', 'Next &gt;'); ?></li>
+				<li>
+					<?php
+						if ( in_category('Instagram') ) {
+							next_post_link('%link', 'Next &gt;', TRUE);
+						 } else {
+						 	next_post_link('%link', 'Next &gt;', FALSE, '460');
+						 }
+					?>
+				</li>
 			</ul>
 		</nav>
 	<?php endwhile; endif; ?>
